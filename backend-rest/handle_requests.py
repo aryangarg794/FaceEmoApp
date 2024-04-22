@@ -3,6 +3,7 @@ from alexnet_model import alexnet
 
 import cv2
 from fastapi import FastAPI, File, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
 from io import BytesIO
 import numpy as np
 from PIL import Image
@@ -21,6 +22,16 @@ image_size = (48, 48)
 rescaling = Sequential([
     Rescaling(1./255)
 ])
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 vggnet_model = tf.keras.models.load_model('../models/vggnet.keras')
 alexnet.load_weights("../weights/alexnet.weights.h5")
