@@ -8,11 +8,13 @@ A small application which features face emotion recognition, with the option of 
 A small demo of the app can be seen below:
 ![Desktop2024 04 22-19 11 44 03-ezgif com-video-to-gif-converter](https://github.com/aryangarg794/FaceEmoApp/assets/72252206/aad53261-5f1d-45c0-baa7-7d245fa27a08)
 
-To run the project run the code below:
-`pip install requirements.txt`
-`cd backend-rest`
+To run the project run the code below:\
+`pip install requirements.txt`\
+`cd backend-rest`\
 `python handle_requests.py`
-**In a separate terminal**
-`cd frontend-emoapp`
-`npm install`
+
+**In a separate terminal** 
+
+`cd frontend-emoapp`\
+`npm install`\
 `npm run dev`
