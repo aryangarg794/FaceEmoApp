@@ -18,3 +18,6 @@ To run the project run the code below:\
 `cd frontend-emoapp`\
 `npm install`\
 `npm run dev`
+
+**Unused**
+Fine-tuned ResNet101V2 on the dataset (Not available as option)
